@@ -28,7 +28,7 @@ const SwList = () => {
 
         <div className="sw-card">
             {info.map(item => {
-                return <SwCard name={item.name} height={item.height} mass={item.mass} key={item.name} />
+                return <SwCard name={item.name} height={item.height} mass={item.mass} birthYear={item.birth_year} key={item.name} />
             })}
         </div>
     );

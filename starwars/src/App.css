@@ -10,8 +10,13 @@
 
 .container{
   width: 75%;
-  display: flex;
+ 
 }
+
+/* .sw-card{
+border: 2px solid blue;
+display: flex;
+} */
 
 
 .starwars-card{
@@ -23,8 +28,4 @@
 
 }
 
-.card{
 
-  padding: 2% 0 1% 0;
-  margin-bottom: 5%;
-}

@@ -1,22 +1,44 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
+import { CardText } from 'reactstrap';
+import styled from "styled-components";
 
 
+const CustomCard = styled.div`
+background: #333;
+ border-color: #333;
+color: white;
+ padding: 2% 0 1% 0;
+  margin-bottom: 5%;
+`;
+
+const CustomTitle = styled.div`
+border-bottom: 1px solid white;
+
+`;
+
+const CustomText = styled.div`
+border-bottom: 1px solid white;
+
+`;
+
+const CustomBody = styled.div`
+padding: 2% 0 2% 0;
+margin-bottom: 5%;
+`;
 
 const SwCard = (props) => {
     return (
         <div className="container" key={props.name}>
             <div className="starwars-card">
-                <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-                    <CardBody className='card'>
-                        <CardTitle>Name: {props.name}</CardTitle>
-                        <hr></hr>
-                        <CardText>Height: {props.height}</CardText>
-                        <hr></hr>
-                        <CardText>Mass: {props.mass}</CardText>
+                <CustomCard>
+                    <CustomBody>
+                        <CustomTitle>Name: {props.name}</CustomTitle>
+                        <CustomText>Height: {props.height}</CustomText>
+                        <CustomText>Mass: {props.mass}</CustomText>
+                        <CardText>Birth Year: {props.birthYear}</CardText>
 
-                    </CardBody>
-                </Card>
+                    </CustomBody>
+                </CustomCard>
             </div>
         </div>
     );
