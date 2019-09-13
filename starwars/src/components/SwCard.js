@@ -13,12 +13,12 @@ color: white;
 
 const CustomTitle = styled.div`
 border-bottom: 1px solid white;
-
+padding: 0 0 5% 0;
 `;
 
 const CustomText = styled.div`
 border-bottom: 1px solid white;
-
+padding: 2% 0 2% 0;
 `;
 
 const CustomBody = styled.div`
@@ -35,7 +35,7 @@ const SwCard = (props) => {
                         <CustomTitle>Name: {props.name}</CustomTitle>
                         <CustomText>Height: {props.height}</CustomText>
                         <CustomText>Mass: {props.mass}</CustomText>
-                        <CardText>Birth Year: {props.birthYear}</CardText>
+                        <CardText className="card-text">Birth Year: {props.birthYear}</CardText>
 
                     </CustomBody>
                 </CustomCard>
