@@ -6,3 +6,26 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+
+.container{
+  width: 75%;
+  
+}
+
+
+.starwars-card{
+ 
+  width: 20%;
+  margin-left: 57%;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+.card-text{
+padding: 7% 0 0 0;
+}
+
+
+

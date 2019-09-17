@@ -27,20 +27,36 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 
+React is a UI component library that was created by Facebook to help solve the issues that came with dealing with complex state. They sought to find a way to manage a lot of data without bogging down the browser. React is founded on the idea that DOM manipulation is an expensive operation and should be minimized. If data changes over time at high rates (for example, lots of people commenting in a post, likes being generated etc), then I would need my DOM updates to be very fast and also reflect in other parts of my UI if they use the same data. I also don't want to refresh/re-render other parts of my app just to see a new comment or to see the updated likes count. Only the new comment needs to be rendered.
+
+
+
 
 - [ ] What does it mean to _think_ in react?
+
+
+One of the many great parts of React is how it makes you think about apps as you build them. You are building components that will be put together to create your app. Like a puzzle. Every component has a function it is responsible for that. You are forced to think out the entire process, assess all of the parts, what they do/should do, how important they are and where they should go and how they effect the other pieces.
 
 
 
 - [ ] Describe state.
 
 
+State is the status of something, like data, that can change from one state to another due to some action or change. Going from hot to cold, up to down, in to out, on to off, fat to skinny, hungry to full, happy to sad etc. React helps to manage state changes dynamically.
+
+
 
 - [ ] Describe props.
 
 
+A React component is a reusable component which can be used over and over again in the UI , but not always are we going to render the same component with same data. Props allow us to change the data or content within a component. This makes components reusable.
+
+
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+
+A side effect is when a function tries to do anything outside of it's body or scope. A side effect is anything that affects something outside the scope of the function being executed. This can be a network request, which has your code communicating with a third party and thus making the request, causing logs to be recorded, caches to be saved or updated, all sorts of effects that are outside the function. We use the useEffect hook to sync effects in a React component to state or prop changes.
 
 
 
